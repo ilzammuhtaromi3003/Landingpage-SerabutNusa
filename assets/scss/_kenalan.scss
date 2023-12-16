@@ -1,0 +1,98 @@
+@use "variables";
+
+.home-kenalan{
+  position: relative;
+  scroll-margin-top: 5vh;
+  .container{
+    .description{
+      color: variables.$color-gray-200;
+      font-family: variables.$font-main;
+      font-size: 24px;
+    }
+  }
+  .image-overlap{
+    display: grid;
+    grid-template-columns: repeat(40);
+    grid-template-rows: repeat(40);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    max-width: 70%;
+    margin: 0 auto;
+    &-first{
+      .image-top{
+        grid-area: 1 / 1 / 40 / 40;
+      }
+      .image-top-bg{
+        grid-area: 2 / 2 / 41 / 41;
+      }
+    }
+    &-second{
+      .image-top-bg { grid-area: 24 / 3 / 41 / 28; }
+      .image-bot-bg { grid-area: 1 / 19 / 30 / 41; }
+      .image-bot { grid-area: 2 / 15 / 34 / 40; }
+      .image-top { grid-area: 23 / 1 / 40 / 27; }
+    }
+    &-third{
+      .image-top{
+        grid-area: 2 / 1 / 40 / 39;
+      }
+      .image-top-bg{
+        grid-area: 1 / 2 / 39 / 40;
+      }
+    }
+  }
+}
+
+@media screen and ( min-width: variables.$mobile) and (max-width : variables.$tablet) {
+  .home-kenalan{
+    .container{
+      .title {
+        font-size: 30px;
+        font-weight: 800;
+      }
+      .description {
+        font-size: 18px;
+        line-height: 23px;
+      }
+    }
+    .image-overlap{
+      width : 60%;
+    }
+  }
+}
+
+@media screen and ( max-width: variables.$mobile) {
+  .home-kenalan{
+    .container{
+      .title {
+        font-size: 30px;
+        font-weight: 800;
+      }
+      .description {
+        font-size: 18px;
+        line-height: 23px;
+      }
+    }
+    .image-overlap{
+      width : 75%;
+    }
+  }
+}
+
+@media screen and (min-width: variables.$tablet) and (max-width: variables.$laptop) {
+  .home-kenalan{
+    .container{
+      .title {
+        font-size: 30px;
+        font-weight: 800;
+      }
+      .description {
+        font-size: 18px;
+        line-height: 23px;
+      }
+    }
+    .image-overlap{
+      width : 60%;
+    }
+  }
+}

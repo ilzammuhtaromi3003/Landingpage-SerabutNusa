@@ -1,0 +1,76 @@
+@use "variables";
+
+.custom-nav{
+    font-size: variables.$font-size-navbar;
+    .navbar-brand{
+        margin-right: 160px;
+        max-width: 100%;
+    }
+    #navbarNav {
+        .navbar-nav {
+            padding-left: 0;
+            padding-right: 0;
+            .nav-item {
+                .nav-link {
+                    color : variables.$color-primary;
+                    font-weight: bold;
+                    padding-left: 32px;
+                    padding-right: 32px;
+                    font-family: "avenir";
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width : 1200px){
+    .custom-nav{
+        .navbar-brand{
+            margin-right: 100px;
+            max-width: 80%;
+        }
+            
+                #navbarNav {
+                    .navbar-nav {
+                        .nav-item {
+                            .nav-link {
+                               font-size: 20px;
+                               padding-left: 24px;
+                               padding-right: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+@media screen and (max-width : 991px){
+    .custom-nav{
+        .navbar-brand{
+            margin-right: 0;
+            max-width: 70%;
+            
+        }
+        .wrap-navbar-nav{
+            padding-left: 0;
+            padding-right: 0;
+
+        }
+                #navbarNav {
+                    .navbar-nav {
+                        .nav-item {
+                            .nav-link {
+                               font-size: 18px;
+                               padding-left: 0;
+                               padding-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+                
+            
+            
+            
