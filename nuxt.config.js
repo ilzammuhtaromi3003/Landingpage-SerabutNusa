@@ -16,8 +16,8 @@ export default {
         type: 'image/x-icon',
         href: '/favicon.ico'
       },
-      {rel:"stylesheet", href:"https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap"},
-      {rel:"stylesheet", href:"https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Open+Sans:wght@300;500;700&display=swap"}
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Open+Sans:wght@300;500;700&display=swap" }
     ],
   },
 
@@ -29,7 +29,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    {src: '~/plugins/bootstrap.js', ssr: false, mode: 'client'}
+    { src: '~/plugins/bootstrap.js', ssr: false, mode: 'client' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -42,7 +42,6 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
   ],
-
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -66,5 +65,7 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    // You can extend webpack config here
+  },
 }
