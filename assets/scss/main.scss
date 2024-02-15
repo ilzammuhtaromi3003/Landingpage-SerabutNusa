@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "avenir";
+    src: url("~/static/fonts/AvenirLTStd-Book.otf") format("opentype");
+    font-style: normal;
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "avenir";
+    src: url("~/static/fonts/AvenirLTStd-Roman.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "avenir";
+    src: url("~/static/fonts/AvenirLTStd-Black.otf") format("opentype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@import "aos/dist/aos.css";
+@import "boxicons/css/boxicons.min.css";
+@import "~bootstrap/scss/bootstrap";
+@import "footer";
+@import "hero";
+@import "product";
+@import "button";
+@import "navbar";
+@import "img";
+@import "kenalan";
+@import "section";
+
+
+

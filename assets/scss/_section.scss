@@ -1,0 +1,180 @@
+@use "variables";
+
+.home{
+  &-step{
+    background-color: variables.$color-gray-100;
+  }
+  &-kenalan{
+    background-color: variables.$color-gray-100;
+  }
+}
+.container{
+  .title {
+    font-family: variables.$font-main;
+    font-size: 48px;
+    font-weight: bold;
+  }
+  .span{
+    color: variables.$color-primary;
+  }
+  &-general{
+      .description {
+          font-size: 24px;
+          font-family: variables.$font-sub;
+          font-weight: 400;
+          line-height: 32px;
+          color: variables.$color-gray-200;
+      }
+  }
+  &-step{
+      font-family: variables.$font-main;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 36px;
+      .list-container{
+        padding-right: 48px;
+        padding-left: 48px;
+        .list{
+          padding-top: 3px;
+          padding-bottom: 3px;
+          list-style-type: disc;
+          color: variables.$color-black;
+        }
+      }
+  }
+  &-benefit{
+    .title{
+      color:variables.$color-primary;
+    }
+    .wrapper{
+      padding-top: 24px;
+      padding-bottom: 24px;
+      padding-right: 120px;
+      padding-left: 120px;
+      .row{
+        margin-top: 24px;
+        margin-bottom: 24px;
+      }
+      .description{
+        font-family: variables.$font-main;
+        font-weight: normal;
+        font-size: 24px;
+        color: variables.$color-black;
+      }
+    }
+  }
+}
+
+@media screen and ( max-width: variables.$laptop) {
+
+  .container{
+    .title {
+      font-size: 30px;
+      font-weight: bold;
+    }
+    &-general{
+      .description {
+        font-size: 18px;
+        line-height: 23px;
+      }
+      .image {
+        width: 75%;
+      }
+    }
+    &-step{
+      font-size: 18px;
+      line-height: 24px;
+      .list-container{
+        padding-right: 12px;
+        padding-left: 12px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        .list{
+          padding-top: 1px;
+          padding-bottom: 1px;
+        }
+      }
+      .image {
+        width: 75%;
+      }
+    }
+    &-benefit{
+      .wrapper{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-right: 0;
+        padding-left: 0;
+        .row{
+          margin-top: 16px;
+          margin-bottom: 16px;
+        }
+        .description{
+          font-size: 16px;
+        }
+      }
+    }
+    &-earning{
+      .col-desc{
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: variables.$mobile) {
+
+  .container{
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    &-general{
+      .description {
+        font-size: 15px;
+        line-height: 20px;
+      }
+      .image {
+        width: 100%;
+      }
+    }
+    &-step{
+      font-size: 15px;
+      line-height: 21px;
+      .list-container{
+        padding-right: 12px;
+        padding-left: 12px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        .list{
+          padding-top: 1px;
+          padding-bottom: 1px;
+        }
+      }
+      .image {
+        width: 75%;
+      }
+    }
+    &-benefit{
+      .wrapper{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-right: 0;
+        padding-left: 0;
+        .row{
+          margin-top: 8px;
+          margin-bottom: 8px;
+        }
+        .description{
+          font-size: 12px;
+        }
+      }
+    }
+    &-earning{
+      .col-desc{
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

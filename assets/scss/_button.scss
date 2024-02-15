@@ -1,0 +1,110 @@
+@use "variables";
+
+.btn{
+  font-size: 28px;
+  line-height: 31px;
+  color: variables.$color-white;
+  border-radius: 6px;
+  padding: 15px;
+  &-warning{
+      background-color: variables.$color-secondary;
+      font-family: variables.$font-main;
+      font-style: normal;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      &-hero{
+        line-height: 38px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+      &:hover {
+        color: variables.$color-white;
+        background-color: variables.$color-secondary;
+      }
+      &:focus {
+        color: variables.$color-white;
+        background-color: variables.$color-secondary;
+      }
+  }
+ &-primary {
+  background-color: variables.$color-primary;
+  font-family: variables.$font-main;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  &:hover {
+    color: variables.$color-white;
+    background-color: variables.$color-primary;
+  }
+  &:focus {
+    color: variables.$color-white;
+    background-color: variables.$color-primary;
+  }
+  &-hero {
+    background-color: variables.$color-transparent;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+    box-shadow: none;
+    border: 1px solid;
+    border-color: variables.$color-white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    &:hover {
+      background-color: variables.$color-transparent;
+      border-color: variables.$color-white;
+    }
+    &:focus {
+      background-color: variables.$color-transparent;
+      border-color: variables.$color-white;
+    }
+  }
+  &-register{
+    border-radius: 6px;
+    padding: 15px;
+  }
+  &-kenalan{
+    border-radius: 6px;
+    padding: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+ }
+}
+
+@media screen and (max-width : variables.$laptop) {
+  .btn{
+    font-size: 20px;
+    line-height: 23px;
+    &-warning{
+      &-hero{
+        line-height: 28px;
+      }
+    }
+    &-primary{
+      &-hero{
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: variables.$tablet) {
+  .btn{
+    width: 80%;
+    &-warning{
+      &-hero{
+        line-height: 23px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+    }
+    &-primary{
+      &-hero{
+        line-height: 23px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+    }
+  }
+}

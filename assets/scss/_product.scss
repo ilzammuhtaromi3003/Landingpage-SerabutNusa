@@ -1,0 +1,149 @@
+@use "variables";
+
+.home-product{
+  position: relative;
+  scroll-margin-top: 5vh;
+  width: 100%;
+  background-image: url('~static/images/product-bg.png');
+  background-color: variables.$color-primary;
+  background-position: center;
+  background-size: cover;
+  .container {
+    &-product {
+      padding-bottom: 215px;
+      color: variables.$color-white;
+      .title {
+        color:  variables.$color-white;
+        font-family: variables.$font-main;
+        font-size: 48px;
+        font-weight: 800;
+      }
+      .description {
+        font-size: 24px;
+        font-family: variables.$font-sub;
+      }
+    }
+    .card {
+      background-color: variables.$color-white;
+      border-radius: 20px;
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+      backdrop-filter: blur(10px);
+      padding: 20px 20px;
+      &-body {
+        padding: 0;
+      }
+      &-title {
+        color: variables.$color-black;
+        font-family: variables.$font-main;
+        font-size: 22px;
+      }
+      &-text {
+        color: variables.$color-gray-300;
+        font-family: variables.$font-main;
+        font-size: 18px;
+      }
+      .image {
+        max-width: 80%;
+      }
+    }
+  }
+  .bg-wave{
+    background-image: url('~static/images/product-wave.png');
+    background-position: center;
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: -0;
+    height: 215px;
+    width: 100%;
+  }
+}
+
+@media screen and ( min-width: variables.$tablet) and (max-width : variables.$laptop) {
+  .home-product {
+    .container {
+      &-product {
+        padding-bottom: 107px;
+        .title {
+          font-size: 30px;
+        }
+        .description {
+          font-size: 18px;
+          line-height: 23px;
+        }
+        .card {
+          max-width: 70%;
+          .image{
+            max-width: 40%;
+          }
+          &-title {
+            font-size: 20px;
+          }
+          &-text {
+          font-size: 16px;
+          line-height: 23px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and ( min-width: variables.$mobile) and (max-width : variables.$tablet) {
+  .home-product {
+    .container {
+      &-product {
+        padding-bottom: 98px;
+        max-width: 90%;
+        .title {
+        font-size: 30px;
+        }
+        .description {
+          font-size: 18px;
+          line-height: 23px;
+        }
+        .card {
+          text-align: start;
+          &-title {
+            font-size: 20px;
+          }
+          &-text {
+          font-size: 16px;
+          line-height: 23px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and ( max-width: variables.$mobile) {
+  .home-product {
+    .container {
+      &-product {
+        padding-bottom: 68px;
+        max-width: 90%;
+        .title {
+        font-size: 30px;
+        }
+        .description {
+          font-size: 15px;
+          line-height: 23px;
+        }
+        .card {
+          text-align: start;
+          &-title {
+            font-size: 16px;
+          }
+          &-text {
+          font-size: 14px;
+          line-height: 23px;
+          }
+        }
+      }
+    }
+  }
+}
+

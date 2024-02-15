@@ -1,0 +1,113 @@
+@use "variables";
+
+.home-hero {
+  position: relative;
+  scroll-margin-top: 10vh;
+  margin-top: 50px;
+  width: 100%;
+  background-image: url('~static/images/hero-bg.png');
+  background-color: variables.$color-primary;
+  background-position: center;
+
+  .scroll {
+    .to-top{
+      background: variables.$color-white;
+      position: fixed;
+      bottom: 16px;
+      right: 32px;
+      width: 50px;
+      height: 50px;
+      border-radius: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      color: variables.$color-primary;
+      border: solid 1px variables.$color-gray-200;
+      text-decoration: none;
+      opacity: 0;
+      transition: .4s;
+      z-index: 1;
+      cursor: pointer;
+      
+    }
+    .to-top.active{
+      bottom: 32px;
+      z-index: 1;
+      pointer-events: auto;
+      opacity: 1;
+  
+    }
+    :hover{
+      color: variables.$color-white;
+      background-color: variables.$color-primary;
+      transition: none;
+    }
+
+  }
+  
+
+  .container{
+        &-hero{
+            padding-bottom: 80px;
+            color: variables.$color-white;
+            .title {
+              font-family: variables.$font-main;
+              font-size: 58px;
+              font-weight: 800;
+              line-height: 79px;
+            }
+            .description {
+              color: variables.$color-white;
+              font-size: 24px;
+              font-family: variables.$font-sub;
+              font-weight: 400;
+            }
+        }
+  }
+  .bg-wave{
+    background-image: url('~static/images/hero-wave.png');
+    background-position: center;
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: -0;
+    height: 164px;
+    width: 100%;
+  }
+}
+
+@media screen and ( min-width: variables.$mobile) and (max-width : variables.$tablet) {
+  .home-hero{
+    .container{
+      &-hero{
+        .title{
+          font-size: 34px;
+          line-height: 50px;
+        }
+        .description{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: variables.$mobile) {
+  .home-hero{
+    .container{
+      &-hero{
+        .title{
+          font-size: 28px;
+          line-height: 40px;
+        }
+        .description{
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
