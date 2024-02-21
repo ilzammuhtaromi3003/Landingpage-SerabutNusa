@@ -71,3 +71,7 @@ More information about the usage of this directory in [the documentation](https:
 #local Development Notes
 ### `NVM 16.15.0`
 ### `NVM 8.5.5`
+
+![serabutnusa-landing-page](https://github.com/ilzammuhtaromi3003/Landingpage-SerabutNusa/assets/106060919/c9fa344a-a0c4-4f67-8b54-31db1fed0f99)
+
+
